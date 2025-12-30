@@ -1,0 +1,7 @@
+
+{
+  "appId": "com.ubaya.studenthub",
+  "appName": "Ubaya Student Hub",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

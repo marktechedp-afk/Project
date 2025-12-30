@@ -1,0 +1,8 @@
+
+{
+  "name": "Ubaya Student Hub",
+  "description": "A React-based mobile-responsive portal for managing student lists, requesting friends, and handling student profiles.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
