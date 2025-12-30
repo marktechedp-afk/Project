@@ -32,7 +32,7 @@ jobs:
 
       - name: Initialize & Sync Capacitor
         run: |
-          # Jika folder android belum ada, tambahkan dulu
+          # Jika folder android belum ada, tambahkan dulu secara otomatis
           if [ ! -d "android" ]; then
             npx cap add android
           fi
