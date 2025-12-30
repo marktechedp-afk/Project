@@ -26,10 +26,17 @@ jobs:
         run: npm install
 
       - name: Build Web Assets
-        run: npm run build
+        run: |
+          mkdir -p dist
+          npm run build
 
-      - name: Sync Capacitor
-        run: npx cap sync android
+      - name: Initialize & Sync Capacitor
+        run: |
+          # Jika folder android belum ada, tambahkan dulu
+          if [ ! -d "android" ]; then
+            npx cap add android
+          fi
+          npx cap sync android
 
       - name: Build with Gradle
         run: |
